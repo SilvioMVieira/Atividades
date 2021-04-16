@@ -1,4 +1,4 @@
-Questão 1
+//Questão 1
 var i = 0
 var n1 = 0
 var n2 = 0
@@ -41,7 +41,7 @@ console.log(n1)
 console.log(n2)
 console.log(n3)
 
-Questão 2
+//Questão 2
 var n1 = Number(prompt("Digite um número: "))
 var n2 = Number(prompt("Digite um número: "))
 var n3 = Number(prompt("Digite um número: "))
@@ -69,7 +69,7 @@ if (ordem == 2) {
     }
 }
 
-Questão 3
+//Questão 3
 var i = 1
 var acumulado = 0
 var media = 0
@@ -97,7 +97,7 @@ console.log("A soma dos números pares digitados é: " + acumulado)
 console.log("A média aritmética dos números pares digitados é: " + media)
 
 
-Questão 4
+//Questão 4
 var i = 0;
 var soma = 0;
 var numero = 0;
@@ -111,7 +111,7 @@ for (i; i < 500; i++) {
 console.log("A soma de todos os números ímpares múltiplos de 3 é: " + soma)
 
 
-Questão 5
+//Questão 5
 var vinhoBranco = Number(prompt("Digite a quantidade de garrafas de vinho branco: "))
 var vinhoTinto = Number(prompt("Digite a quantidade de garrafas de vinho tinto: "))
 var vinhoRose = Number(prompt("Digite a quantidade de garrafas de vinho rose: "))
@@ -126,7 +126,7 @@ console.log("O estoque total de vinhos é: " + estoqueVinho)
 alert("Percentual por tipo de vinho: \n" + "Branco: " + vinhoBranco + "%" + "\n"
     + "Tinto: " + vinhoTinto + "%" + "\n" + "Rosé: " + vinhoRose + "%")
 
-Questão 6
+//Questão 6
 var i = 1
 var conta = 5 * acumulador
 var acumulador = 0
@@ -141,7 +141,7 @@ do {
 
 } while (i <= 10)
 
-Questão 7
+//Questão 7
 var numero = Number(prompt('Escolha um numero para realizar a tabuada:'))
 var i = 1
 var contador = 0
@@ -156,7 +156,7 @@ do {
     i++
 } while (i <= 10)
 
-Questão 8
+//Questão 8
 // Dado o algoritmo que foi realizado na aula anterior(parte 1 e 2):
 // Parte 1. Desenvolva um algoritmo que calcule a media aritmética entre quatro notas quaisquer fornecidas pelo usuário.
 // Pense em:
