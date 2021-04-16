@@ -1,0 +1,26 @@
+var i = 0
+var maior = 0
+var menor = 0
+var nMeio = 0
+
+ for(i; i < 3; i++){
+     var numero = Number(prompt("Digite um número: " + (i + 1)))
+    
+        if(i == 0){
+           menor = numero
+           maior = numero
+           nMeio = numero
+        }
+        if (numero > maior){ 
+            maior = numero
+        } else if (numero < menor){
+            menor = numero
+        } else {
+           nMeio = numero
+        } 
+     
+ }
+        console.log("Números em ordem crescente:") 
+        console.log(menor)   
+        console.log(nMeio)
+        console.log(maior)

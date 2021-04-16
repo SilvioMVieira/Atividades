@@ -1,0 +1,51 @@
+LISTA DE EXERCICIO 02
+
+1. Tipo primitivo
+    a. A placa "Pare!" tinha dois furos de bala.
+        Tipo primitivo: caracter/inteiro
+    b. Manuela subiu cinco degraus para pegar a maça.
+        Tipo primitivo: inteiro
+    c. Marcelo levou três horas e meia para completar a prova.
+        Tipo primitivo: real
+
+2. Variáveis
+    a. (X)  Identificador inválido
+    b. #55  Identificador inválido
+    c. "Aluno"  Identificador inválido
+
+3. Declare as variáveis:
+    notaAluno:  Real
+    nomeAluno:  Caracter
+    matAluno:   Inteiro/caracter
+    Sexo:       Caracter/char
+
+4. Valor lógico das expressões
+    a. 2*4 = 24/3
+         8 = 8          Verdadeiro
+    
+    b. 15mod4 < 19mod6
+            3 < 1       Falso
+
+    c. 3*5div4 <= 3**2/0.5
+             3 <= 18    Verdadeiro
+
+    d. 2+8mod7 >= 3*6-15
+            3  >= 3     Verdadeiro   
+
+5. Explicar o que acontece em cada linha
+    inicio                  //inicia algoritmo
+        var                 //informa variáveis
+            x, y: inteiro;  //declaração de variáveis
+            z: real;        //declaração de variáveis
+            leia (x);       //inserir valor de x
+            escreva (x, "ao cubo", x**3);   //exibe resultado de x elevado ao cubo
+            leia (y);       //inserir valor de y
+            escreva (x + y);//exibe resultado da soma entre x e y
+            z = x/y;        //declara valor de z
+            escreva (z);    //exibe valor de z
+            z = z + 1;      //incrementa 1 ao valor de z
+            escreva z;      //exibe valor de z
+    fim                     //termina algoritmo
+
+6. em execução
+7. em execução

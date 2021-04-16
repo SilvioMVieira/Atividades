@@ -1,0 +1,22 @@
+
+var nomeAluno = prompt("Informe o nome do aluno: ")
+var nota1 = Number(prompt("Digita a nota 1")) //nota da primeira unidade
+var nota2 = Number(prompt("Digita a nota 2")) //nota da segunda unidade
+var nota3 = Number(prompt("Digita a nota 3")) //nota da terceira unidade
+var nota4 = Number(prompt("Digita a nota 4")) //nota da quarta unidade
+//media para aprovação
+var mediaAluno = (nota1 + nota2 + nota3 + nota4) / 4
+alert("Média do aluno é: " + mediaAluno)
+
+if (mediaAluno >= 7) {
+    alert(nomeAluno + " foi aprovado!")
+}
+else {
+    alert(nomeAluno + " fará prova final")
+}
+var mediaFinal = Number(prompt("Digita a Nota Final"))
+if (mediaFinal >= 5) {
+    alert(nomeAluno + " foi aprovado(a) na final!")
+} else {
+    alert(nomeAluno + " foi reprovado(a) na final!")
+}
