@@ -1,2 +1,0 @@
-//Crie uma função que recebe um array de 2 números e coloque em ordem crescente. Não usar o comando sort.
-var numeros = []
