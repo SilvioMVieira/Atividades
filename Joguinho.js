@@ -128,3 +128,65 @@ for (var i = 0; i < jogadores.length; i++) {
   jogadores
 }
 
+//xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+function ler() {
+  var x = Number(prompt("Digite um número qualquer " + jogadores[i].nome + "."));
+  return x;
+}
+var jogadores = [];
+var contTentativas = 0;
+
+function joga() {
+  do {
+    var numero = null;
+    contTentativas = contTentativas + 1;
+    numero = ler();
+    if (numero < pensei) {
+      alert("Errou! O número que você quer advinhar é maior que " + numero + ".\n" + jogadores[i].nome + " tente novamente.");
+    }
+    if (numero > pensei) {
+      alert("Errou! O número que você quer advinhar é menor que " + numero + ".\n" + jogadores[i].nome + ". Tente novamente.");
+    }
+    if (numero === pensei) {
+      alert(jogadores[i].nome + " , você acertou o número em " + contTentativas + " tentativas!");
+
+      jogadores[i].pontuacao =
+        contTentativas < jogadores[i].pontuacao || jogadores[i].pontuacao === 0
+          ? contTentativas
+          : jogadores[i].pontuacao;
+    }
+  } while (numero !== pensei);
+  return player;
+}
+alert("Bem vindo ao jogo 'Advinhe o Número!' \n\n Advinhe o número aleatório com menos tentativas, \n e genhe de seus adversários")
+
+var opcao = Number(prompt("Informe a opção desejada: \n 1 - Novo jogo \n 2 - Sair do jogo"))
+if (opcao == 1) {
+var numJogadores = Number(prompt("Informe a quantidade de jogadores"))
+if (numJogadores > 0) {
+  for (var i = 0; i < numJogadores; i++) {
+    var player = { nome: prompt("Digite o nome do jogador" + (i + 1)), pontuacao: 0 };
+    jogadores.push(player)
+  }
+}
+  for (i = 0; i < numJogadores; i++) {
+    alert("Vez de " + jogadores[i].nome)
+    var pensei = Math.floor(Math.random() * 100);
+    joga()
+    contTentativas = 0
+  } 
+  }else {
+    close
+}
+for (var i = 0; i < jogadores.length; i++) {
+  for (var j = i + 1; j < jogadores.length; j++) {
+    if (jogadores[i].pontuacao > jogadores[j].pontuacao) {
+      var aux = jogadores[i]
+      jogadores[i] = jogadores[j]
+      jogadores[j] = aux;
+    }
+  }
+}
+alert("Parabéns " + jogadores[0].nome + ", você ganhou o jogo com apenas " + jogadores[0].pontuacao + " tentativas!")
+console.log("Ranking")
+jogadores
